@@ -15,7 +15,8 @@
    <!--script src="jq.js"></script--> 
 
     <!-- Google Fonts -->
- <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+
 <style type="text/tailwindcss">
 @layer utilities {
      body{font-family:Poppins,arial;}
@@ -24,35 +25,47 @@
   </head>
 <body class="bg-purple-100 text-base">
   	
-<div class="fixed w-full bg-white top-0 lg:bg-blue-500"> 
+<div class="fixed w-full bg-white top-0 "> 
 	
-      <nav class="border-b-2 border-slate-400   box-border  bg-white py-2.5 px-5 flex justify-between items-center lg:flex shadow-lg z-10">
+      <nav class="border-b-2 border-slate-400   box-border  bg-white p-2 flex justify-between items-center lg:flex shadow-lg z-10">
   	   <div class="text-2xl font-bold">Jurnal's <span class="text-purple-600">Wege</span></div>
-         <span class="rounded py-2 px-2 bg-purple-600  text-white text-2xl span2 lg:hidden "><i class="fas fa-bars"></i> </span>
-       </nav>
-       <div class="menu py-5  hidden lg:block bg-white">
-            <ul class="text-center text-lg font-bold bg-white">
+         <span class="rounded-full  bg-purple-600  text-white text-md px-3 py-3 span2 sm:block md:hidden "><i class="fas fa-bars"></i> </span>
+       
+       <div class="hidden md:block bg-white">
+            <ul class="text-center text-lg font-bold bg-white md:flex md:items-center gap-4">
      	       <li class=" bg-white group hover:bg-purple-600"> <a class="text-black  group-hover:text-white">Home</a></li>
           	  <li class="bg-white group hover:bg-purple-600"> <a class="text-black group-hover:text-white"> About</a></li>
                 <li class="bg-white group hover:bg-purple-600"> <a class="text-black group-hover:text-white"> FAQs</a></li>
                <li class="bg-white group hover:bg-purple-600"> <a class="text-black group-hover:text-white">Contact</a></li>
-               <li class="bg-white"><input class="w-2/3 h-10 border-2 border-slate-300  rounded m-1" placeholder="search something..." type="search"/><button type="submit" class="bg-purple-600 text-white text-lg rounded p-3"> <i class="fas fa-search"></i> </button></li>
+               <li class="bg-white"><input class="w-[170px] h-[40px] border-2 border-slate-300  rounded-full m-1 text-xs text-purple-800 p-3" placeholder="search something..." type="search"/><button type="submit" class="bg-purple-600 text-white text-lg rounded-full px-6 py-3 group hover:bg-red-600"> <i class="fas fa-search"></i> </button></li>
+             </ul>
+         
+         </div>
+
+      </nav>
+       <div class="menu py-5  hidden bg-white">
+            <ul class="text-center text-lg font-bold bg-white ">
+     	       <li class=" bg-white group hover:bg-purple-600"> <a class="text-black  group-hover:text-white">Home</a></li>
+          	  <li class="bg-white group hover:bg-purple-600"> <a class="text-black group-hover:text-white"> About</a></li>
+                <li class="bg-white group hover:bg-purple-600"> <a class="text-black group-hover:text-white"> FAQs</a></li>
+               <li class="bg-white group hover:bg-purple-600"> <a class="text-black group-hover:text-white">Contact</a></li>
+               <li class="bg-white"><input class="w-2/3 h-9 border-2 border-slate-300  rounded-full m-1 p-3" placeholder="search something..." type="search"/><button type="submit" class="bg-purple-600 text-white text-lg rounded-full px-6 py-3 group hover:bg-red-600"> <i class="fas fa-search"></i> </button></li>
              </ul>
          
          </div>
 </div>
      
-     <div class="mt-20"><div>
+     <div class="mt-[100px]"><div>
   
      
-  	<div class=" m-5 bg-white rounded-lg overflow-hidden shadow-2xl">
-  	<div class="h-[200px]   w-full bg-[url('img/photo-1452421822248-d4c2b47f0c81.jpeg')] bg-cover bg-center" ><!-- img src="photo-1452421822248-d4c2b47f0c81.jpeg" alt="tes"></img--></div>
-      <div class="p-6">
-       	<div class="mb-3"> <h2 class="text-xl text-purple-500 font-bold" > jurnal's wege<h2></div>
-        	<div class="mb-2 ">cerita tentang perjalanan seorang manusia menjalani hidup</div>
+     <div class=" m-5 bg-white rounded-lg overflow-hidden shadow-2xl md:flex  md:h-[500px] md:mx-7">
+  	 <div class="h-[200px] w-full bg-[url('img/photo-1452421822248-d4c2b47f0c81.jpeg')] bg-cover bg-center md:w-[50%] md:h-full" ><!-- img src="photo-1452421822248-d4c2b47f0c81.jpeg" alt="tes"></img--></div>
+       <div class="p-6 md:w-[50%] md:p-8 md:mt-[100px]">
+       	<div class="mb-3"> <h2 class="text-xl text-purple-500 font-bold md:text-5xl" > jurnal's wege<h2></div>
+        	<div class="mb-2 md:text-md ">cerita tentang perjalanan seorang manusia menjalani hidup</div>
         	<div class="mt-2 mb-2  h-[2px] bg-slate-200 w-[200px]"></div>
-            <div class="mb-6"><i class="far fa-user text-slate-400 mr-1"></i> wege kastelo <i class="far fa-clock text-slate-400 mr-1"></i> 12 juni 2022</div> <br/>
-            <button class="rounded text-white bg-purple-600 p-2">lanjut baca <i class=" ml-2 mr-2 fas fa-caret-right "></i></button>
+            <div class="mb-6 md:text-lg "><i class="far fa-user text-slate-400 mr-1"></i> wege kastelo <i class="far fa-clock text-slate-400 mr-1"></i> 12 juni 2022</div> <br/>
+            <button class="rounded-full py-3 px-6 text-white bg-purple-600 p-2">lanjut baca <i class=" ml-2 mr-2 fas fa-caret-right "></i></button>
         </div>
       </div>
    
@@ -64,11 +77,52 @@
          	<div class="mb-2 ">cerita tentang perjalanan seorang manusia menjalani hidup</div>
          	<div class="mt-2 mb-2  h-[2px] bg-slate-200 w-[200px]"></div>
              <div class="mb-6"> <i class="far fa-user mr-1 text-slate-400 "></i> wege kastelo <i class="far fa-clock mr-1 text-slate-400 "></i> 12 juni 2022</div><br/>
-             <button class="rounded text-white bg-purple-600 p-2">lanjut baca<i class="ml-2 mr-2 fas fa-caret-right"></i> </button>
+             <button class="rounded-full px-6 py-3 text-white bg-purple-600 p-2">lanjut baca<i class="ml-2 mr-2 fas fa-caret-right"></i> </button>
         </div>
       </div>
-  
-<footer class="bg-white px-7 py-5 ">made with  <i class="fas fa-heart text-purple-600"></i> by wege 404 &copy; at 2022 </footer>
+
+<div class="bg-white p-5 ">
+  <ul class="flex justify-between items-center">
+  	<li><button class="bg-purple-600 text-white px-6 py-3 rounded-full"><i class="fas fa-chevron-left"></i></button></li>
+  	<li><button class="bg-purple-600 text-white px-6 py-3 rounded-full"><i class="fas fa-home mr-3"></i> beranda</button></li>
+  	<li><button class="bg-purple-600 text-white px-6 py-3 rounded-full"><i class="fas fa-chevron-right"></i></button></li>
+  	
+  </ul>
+</div>
+
+
+<div class="menu-bottom bg-slate-800 text-white p-4 flex flex-wrap gap-2 md:gap-0 ">
+ <ul class="w-[40%] md:w-[25%] mb-5">
+ 	<li on class="text-purple-400">home</li>
+ 	<li>about</li>
+ 	<li>faq,s</li>
+ 	<li>contack</li>
+ </ul>
+ <ul class="w-[40%] md:w-[25%] mb-5">
+ 	<li class="text-purple-400">tarot</li>
+ 	<li>mayor arcane card</li>
+ 	<li>minor arcane card</li>
+ 	<li>spread card</li>
+ </ul>
+  <ul class="w-[40%] md:w-[25%] mb-5">
+ 	<li class="text-purple-400">human design</li>
+ 	<li>type</li>
+ 	<li>gate</li>
+ 	<li>cross live</li>
+      <li> a sign of emotion</li>
+   	<li>chakra</li>
+ </ul>
+   <ul class="w-[40%] md:w-[25%] mb-5">
+ 	<li class="text-purple-400">astologi</li>
+ 	<li> Feng Shui</li>
+ 	<li>weton</li>
+ 	<li>good day to have party</li>
+ </ul>
+ 
+ 
+</div>
+
+<footer class="bg-slate-900 text-white px-7 py-5 ">made with  <i class="fas fa-heart text-purple-600"></i> by wege 404 &copy; at 2022 </footer>
   
   
   <script>

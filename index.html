@@ -1,141 +1,235 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>tailwind css jurnal wege</title>
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <script src="https://cdn.tailwindcss.com"></script>
 
-  
-     <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
-    <!--link rel="stylesheet" href="fa/css/all.min.css"/-->
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-   <!--script src="jq.js"></script--> 
+  <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /-->
 
-    <!-- Google Fonts -->
- <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="fa/css/all.min.css"/>
 
-<style type="text/tailwindcss">
-@layer utilities {
-     body{font-family:Poppins,arial;}
- }
-</style> 
-  </head>
-<body class="bg-purple-100 text-base ">
-  	
-<div class="fixed w-full bg-white top-0 "> 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<style>
+      body{font-family:Poppins,arial;}
+      .pacifico{font-family:Pacifico,cursive;}
+ </style>
+
+</head>
+<body class="bg-slate-100">
 	
-      <nav class="border-b-2 border-slate-400   box-border  bg-white p-2 flex justify-between items-center lg:flex shadow-lg z-10">
-  	   <div class="text-2xl font-bold">Jurnal's <span class="text-purple-600">Wege</span></div>
-         <span class="rounded-full  bg-purple-600  text-white text-md px-3 py-3 span2 sm:block md:hidden "><i class="fas fa-bars"></i> </span>
-       
-       <div class="hidden md:block bg-white">
-            <ul class="text-center text-lg font-bold bg-white md:flex md:items-center gap-4">
-     	       <li class=" bg-white group hover:bg-purple-600"> <a class="text-black  group-hover:text-white">Home</a></li>
-          	  <li class="bg-white group hover:bg-purple-600"> <a class="text-black group-hover:text-white"> About</a></li>
-                <li class="bg-white group hover:bg-purple-600"> <a class="text-black group-hover:text-white"> FAQs</a></li>
-               <li class="bg-white group hover:bg-purple-600"> <a class="text-black group-hover:text-white">Contact</a></li>
-               <li class="bg-white"><input class="w-[170px] h-[40px] border-2 border-slate-300  rounded-full m-1 text-xs text-purple-800 p-3" placeholder="search something..." type="search"/><button type="submit" class="bg-purple-600 text-white text-lg rounded-full px-6 py-3 group hover:bg-red-600"> <i class="fas fa-search"></i> </button></li>
-             </ul>
-         
-         </div>
+<!-- nav -->
 
-      </nav>
-       <div class="menu py-5  hidden bg-white">
-            <ul class="text-center text-lg font-bold bg-white ">
-     	       <li class=" bg-white group hover:bg-purple-600"> <a class="text-black  group-hover:text-white">Home</a></li>
-          	  <li class="bg-white group hover:bg-purple-600"> <a class="text-black group-hover:text-white"> About</a></li>
-                <li class="bg-white group hover:bg-purple-600"> <a class="text-black group-hover:text-white"> FAQs</a></li>
-               <li class="bg-white group hover:bg-purple-600"> <a class="text-black group-hover:text-white">Contact</a></li>
-               <li class="bg-white"><input class="w-2/3 h-9 border-2 border-slate-300  rounded-full m-1 p-3" placeholder="search something..." type="search"/><button type="submit" class="bg-purple-600 text-white text-lg rounded-full px-6 py-3 group hover:bg-red-600"> <i class="fas fa-search"></i> </button></li>
-             </ul>
-         
-         </div>
-</div>
-     
-     <div class="mt-[100px]"><div>
-  
-     
-     <div class=" m-5 bg-white rounded-lg overflow-hidden shadow-2xl md:flex  md:h-[500px] md:mx-7 md:text-lg">
-  	 <div class="h-[200px] w-full bg-[url('img/photo-1452421822248-d4c2b47f0c81.jpeg')] bg-cover bg-center md:w-[50%] md:h-full" ><!-- img src="photo-1452421822248-d4c2b47f0c81.jpeg" alt="tes"></img--></div>
-       <div class="p-6 md:w-[50%] md:p-8 md:mt-[100px]">
-       	<div class="mb-3"> <h2 class="text-xl text-purple-500 font-bold md:text-5xl" > jurnal's wege<h2></div>
-        	<div class="mb-2 md:text-md ">cerita tentang perjalanan seorang manusia menjalani hidup</div>
-        	<div class="mt-2 mb-2  h-[2px] bg-slate-200 w-[200px]"></div>
-            <div class="mb-6 md:text-lg "><i class="far fa-user text-slate-400 mr-1"></i> wege kastelo <i class="far fa-clock text-slate-400 mr-1"></i> 12 juni 2022</div> <br/>
-            <button class="rounded-full py-1 px-3 text-white bg-purple-600">lanjut baca <i class=" ml-2 mr-2 fas fa-caret-right "></i></button>
-        </div>
-      </div>
-      
-    <div class=" m-5 bg-white rounded-lg overflow-hidden shadow-2xl md:flex  md:h-[500px] md:mx-7 md:text-lg">
-  	 <div class="h-[200px] w-full bg-[url('img/photo-1452421822248-d4c2b47f0c81.jpeg')] bg-cover bg-center md:w-[50%] md:h-full" ><!-- img src="photo-1452421822248-d4c2b47f0c81.jpeg" alt="tes"></img--></div>
-       <div class="p-6 md:w-[50%] md:p-8 md:mt-[100px]">
-       	<div class="mb-3"> <h2 class="text-xl text-purple-500 font-bold md:text-5xl" > jurnal's wege<h2></div>
-        	<div class="mb-2 md:text-md ">cerita tentang perjalanan seorang manusia menjalani hidup</div>
-        	<div class="mt-2 mb-2  h-[2px] bg-slate-200 w-[200px]"></div>
-            <div class="mb-6 md:text-lg "><i class="far fa-user text-slate-400 mr-1"></i> wege kastelo <i class="far fa-clock text-slate-400 mr-1"></i> 12 juni 2022</div> <br/>
-            <button class="rounded-full py-1 px-3 text-white bg-purple-600">lanjut baca <i class=" ml-2 mr-2 fas fa-caret-right "></i></button>
-        </div>
-     </div>
-   
+<nav class="fixed top-0 bg-white dark:bg-black dark:text-white w-full">
+   <div class="border-b-2 border-slate-300 p-3 flex justify-between md:p-6 ">
+	<div class="logo"><h1 class="pacifico text-2xl text-teal-500 font-bold  dark:text-teal-300">Jurnal'S WeGe</h1></div>
+	<div id="flip" class="md:hidden"><div class=" hover:bg-teal-400 hover:rounded hover:px-1"><i class="tes fas fa-bars text-2xl "></i></div> </div>
+	 <div class="hidden md:block  text-xl mr-5">
+		<ul class="flex gap-5 "> 
+			<li class=""><a href=""  class="">home</a></li>
+			<li class=""><a href="" class="" >faqs</a></li>
+			<li class=""><a href="" class="" ></i>about</a></li>
+			<li class=""><a href="" class="">contack</a></li>
+			<li class=""><a href="" class="">dark  :<i class="fas fa-moon text-blue-500 ml-3"></i></a></li>
+			<li class=""><a href="" class="bg-teal-400 rounded-full py-2 px-6 text-white mt-5">login</a></li>
+		</ul>
+	 </div>
+	</div>
 	
+	<div id="panel" class="hidden buka text-xl w-full bg-slate-100">
+		<ul class="flex flex-col gap-3 p-9  uppercase">
+	        <li class=""><a href=""  class="hover:bg-teal-400"><i class="fas fa-home mr-5"></i>home</a></li>
+			<li class=""><a href="" class=" hover:bg-teal-400" ><i class="fa-solid fa-circle-question mr-5"></i>faqs</a></li>
+			<li class=""><a href="" class="hover:bg-teal-400" ><i class="fa-solid fa-headset mr-5"></i></i>about</a></li>
+			<li class=""><a href="" class="hover:bg-teal-400"><i class="fa-solid fa-address-card mr-5"></i>contack</a></li>
+			<li class=""><a href="" class="hover:bg-teal-400"><i class="fas fa-moon text-blue-500 mr-5"></i> dark</a></li>
+			<li class=""><a href="" class="bg-teal-400 rounded-full py-1 px-4 text-white mt-5 hover:bg-teal-700" ><i class="fa-solid fa-right-to-bracket mr-2"></i> login</a></li>
+		</ul>
+	
+	</div>
+</nav>
+<!-- nav end -->
 
-<div class=" p-5 ">
-  <ul class="flex justify-between items-center text-sm">
-  	<li><button class="bg-purple-600 text-white px-3 py-1 md:px-6 md:py-3 rounded-full md:w-[200px]"><i class="fas fa-chevron-left"></i></button></li>
-  	<li><button class="bg-purple-600 text-white px-3 py-1 md:px-6 md:py-3 rounded-full md:w-[200px]"><i class="fas fa-home mr-3"></i> Home </button></li>
-  	<li><button class="bg-purple-600 text-white px-3 py-1 md:px-6 md:py-3 rounded-full md:w-[200px]"><i class="fas fa-chevron-right"></i></button></li>
- </ul>
+<!-- alerts -->
+<div class="mt-[90px] m-3 rounded-lg  shadow-lg text-lg bg-teal-100 p-3 md:m-[80px] md:mt-[120px] md:h-[400px] text-teal-900">
+	<div class="flex">
+		<i class="fas fa-circle-info text-4xl p-2 md:p-[10px]  md:mt-[40px] md:text-[80px]"></i>
+		<p class="mb-3 p-2 md:p-[40px] md:mb-5 md:text-2xl">
+		  blog ini mengandung LGBT jadi di harap waspada gak cocok untuk orang benci lgbt
+          sekian dan terima kasih. Maaf klo ada beberapa pihak yg tersinggung .Aku sebaik mungkin
+          menjaga privasi kalian. Klo ada kritik dan saran email saja di : <span class="text-blue-500">wege.404@gmail.com</span>
+		</p>
+	</div>
+	<button class=" block mx-auto py-2 px-6 md:py-3 md:px-6 rounded-full text-white bg-teal-400 text-center"> ok aku paham</button>
 </div>
+<!-- alerts end -->
+
+<!-- daftar -->
+<div class=" m-3 mt-5  md:m-9 rounded-lg text-sm md:text-lg p-3  bg-white">
+	<!-- jurnal -->
+     <div class=" p-3"><h1 class="text-2xl text-teal-400  pacifico md:text-3xl md:text-center">isi Blog ini</h1></div>
+	<div class="p-3">
+		<ul class="list-decimal w-full ">
+			<li class="p-2 ml-2"><a href="" >kata pengantar<span class="float-right">open</span></a></li>
+		    <li class="p-2 ml-2"><a href="" >daftar isi<span class="float-right ">open</span></a></li>
+		    <li class="p-2 ml-2"><a href="" >kelahiran ku<span class="float-right">open</span></a></li>
+		    <li class="p-2 ml-2"><a href="" >masa tk <span class="float-right ">open</span></a></li>
+		    <li class="p-2 ml-2"><a href="" >masa sd<span class="float-right ">open</span></a></li>
+		    <li class="p-2 ml-2"><a href="" >masa smp<span class="float-right ">open</span></a></li>
+		    <li class="p-2 ml-2"><a href="" >masa sma<span class="float-right ">open</span></a></li>
+		    <li class="p-2 ml-2"><a href="" >saat kerja di bali<span class="float-right ">open</span></a></li>
+		     <li class="p-2 ml-2"><a href="" >saat kerja di toko<span class="float-right ">open</span></a></li>
+		     <li class="p-2 ml-2"><a href="" >saat kerja di gudang<span class="float-right ">open</span></a></li>
+		      <li class="p-2 ml-2"><a href="" >saat panggilan ke Sumatra<span class="float-right ">open</span></a></li>
+		       <li class="p-2 ml-2"><a href="" >pulang dr Sumatra<span class="float-right ">open</span></a></li>
+		      <li class="p-2 ml-2"><a href="" > kerja di rumah makan<span class="float-right ">open</span></a></li>
+       </ul>
+	</div>
+	<!-- tarot -->
+	<div class=" p-3"><h1 class="text-2xl text-teal-400  pacifico md:text-3xl md:text-center">about tarot</h1></div>
+	<div class="p-3">
+		<ul class="list-decimal w-full ">
+			<li class="p-2 ml-2"><a href="" >sejarah tarot<span class="float-right">open</span></a></li>
+		    <li class="p-2 ml-2"><a href="" >jenis jenis tarot<span class="float-right ">open</span></a></li>
+		    <li class="p-2 ml-2"><a href="" >urutan mayor arkana<span class="float-right">open</span></a></li>
+		    <li class="p-2 ml-2"><a href="" >urutan minor arkana<span class="float-right ">open</span></a></li>
+		    <li class="p-2 ml-2"><a href="" >spread / formasi kartu<span class="float-right ">open</span></a></li>
+		    <li class="p-2 ml-2"><a href="" >astologi western<span class="float-right ">open</span></a></li>
+		    <li class="p-2 ml-2"><a href="" >astrology verdict<span class="float-right ">open</span></a></li>
+		    <li class="p-2 ml-2"><a href="" >weton jawa<span class="float-right ">open</span></a></li>
+		     <li class="p-2 ml-2"><a href="" >feng Shui<span class="float-right ">open</span></a></li>
+		     <li class="p-2 ml-2"><a href="" >pekerjaan tarot reader<span class="float-right ">open</span></a></li>
+		      <li class="p-2 ml-2"><a href="" >kode etik tarot reader<span class="float-right ">open</span></a></li>
+		       <li class="p-2 ml-2"><a href="" >intuisi / baca plek kartu<span class="float-right ">open</span></a></li>
+		      <li class="p-2 ml-2"><a href="" > sumber Informasi tarot<span class="float-right ">open</span></a></li>
+		      <li class="p-2 ml-2"><a href="" > kesimpulan tarot <span class="float-right ">open</span></a></li>
+       </ul>
+	</div>
+	<!-- human design  -->
+	<div class=" p-3"><h1 class="text-2xl text-teal-400  pacifico md:text-3xl md:text-center">about human design</h1></div>
+	<div class="p-3">
+		<ul class="list-decimal w-full ">
+			<li class="p-2 ml-2"><a href="" >sejarah human design<span class="float-right">open</span></a></li>
+		    <li class="p-2 ml-2"><a href="" >tipe pada manusia<span class="float-right ">open</span></a></li>
+		    <li class="p-2 ml-2"><a href="" > strategy dari tipe tadi<span class="float-right">open</span></a></li>
+		    <li class="p-2 ml-2"><a href="" >tema bukan diri<span class="float-right ">open</span></a></li>
+		    <li class="p-2 ml-2"><a href="" >signature<span class="float-right ">open</span></a></li>
+		    <li class="p-2 ml-2"><a href="" >otoritas<span class="float-right ">open</span></a></li>
+		    <li class="p-2 ml-2"><a href="" >profile <span class="float-right ">open</span></a></li>
+		    <li class="p-2 ml-2"><a href="" >renkarnasi<span class="float-right ">open</span></a></li>
+		     <li class="p-2 ml-2"><a href="" >gate<span class="float-right ">open</span></a></li>
+		     <li class="p-2 ml-2"><a href="" >gate merah<span class="float-right ">open</span></a></li>
+		      <li class="p-2 ml-2"><a href="" >gate putih<span class="float-right ">open</span></a></li>
+		       <li class="p-2 ml-2"><a href="" >klo mau tes link di sini <span class="float-right ">open</span></a></li>
+		      <li class="p-2 ml-2"><a href="" > kesimpulan human design <span class="float-right ">open</span></a></li>
+       </ul>
+	</div>
+	<!-- sexuality -->
+	<div class=" p-3"><h1 class="text-2xl text-teal-400  pacifico md:text-3xl md:text-center">about sexualities</h1></div>
+	<div class="p-3">
+		<ul class="list-decimal w-full ">
+			<li class="p-2 ml-2"><a href="" >awal mula kenal pelangi<span class="float-right">open</span></a></li>
+		    <li class="p-2 ml-2"><a href="" >cuman coli <span class="float-right ">open</span></a></li>
+		    <li class="p-2 ml-2"><a href="" >cari teman di fb<span class="float-right">open</span></a></li>
+		    <li class="p-2 ml-2"><a href="" >cari pacar di fb<span class="float-right ">open</span></a></li>
+		    <li class="p-2 ml-2"><a href="" >muncul aplikasi blued<span class="float-right ">open</span></a></li>
+		    <li class="p-2 ml-2"><a href="" >baru tau hornet<span class="float-right ">open</span></a></li>
+		    <li class="p-2 ml-2"><a href="" >awal berani sex <span class="float-right ">open</span></a></li>
+		    <li class="p-2 ml-2"><a href="" >main sana sini<span class="float-right ">open</span></a></li>
+		     <li class="p-2 ml-2"><a href="" >kena penyakit kencing nanah<span class="float-right ">open</span></a></li>
+		     <li class="p-2 ml-2"><a href="" >baru rajin tes vct<span class="float-right ">open</span></a></li>
+		      <li class="p-2 ml-2"><a href="" >dapet ilmu tentang hiv<span class="float-right ">open</span></a></li>
+		       <li class="p-2 ml-2"><a href="" >kesimpulan sex bebas <span class="float-right ">open</span></a></li>
+       </ul>
+	</div>
+	
+</div>
+<!-- daftar end -->
+	
+<!-- footer section --> 
+<div class="flex bg-slate-700 text-white p-1 mt-10 flex-wrap ">
+	<div class="p-3 w-1/2 md:w-1/4">
+		<ul class="">
+			<li class="mb-1"><a href="" class="text-teal-400 uppercase font-bold" >daftar isi </a> </li>
+			<li class="mb-1"><a href="" >awal kehidupan</a> </li>
+            <li class="mb-1"><a href="" >sumber dokumentasi</a> </li>
+			<li class="mb-1"><a href="" >sosial media</a> </li>
+			<li class="mb-1"><a href="" >resume</a> </li>
+		</ul>
+	</div>
+	
+	<div class="p-3 w-1/2 md:w-1/4">
+		<ul class="">
+			<li class="mb-1"><a href="" class="text-teal-400 uppercase font-bold" >tentang tarot </a> </li>
+			<li class="mb-1"><a href="" >belajar mayor-arcana </a> </li>
+			<li class="mb-1"><a href="" >belajar minor-minor</a> </li>
+			<li class="mb-1"><a href="" >kegunaannya tarot </a> </li>
+            <li class="mb-1"><a href="" >tarot dan astrologi</a> </li>
+            <li class="mb-1"><a href="" >tarot dan weton jawa </a> </li>
+            <li class="mb-1"><a href="" >tarot dan fengsui</a> </li>
+             <li class="mb-1"><a href="" >sumber tarot </a> </li>
+			<li class="mb-1"><a href="" >kesimpulan tarot </a> </li>
+		</ul>
+	</div>
+	
+	<div class="p-3 w-1/2 md:w-1/4">
+		<ul class="">
+			<li class="mb-1"><a href="" class="text-teal-400 uppercase font-bold" >human design</a> </li>
+			<li class="mb-1"><a href="" >arti human design</a> </li>
+			<li class="mb-1"><a href="" >kegunaan nya human design</a> </li>
+			<li class="mb-1"><a href="" >tipe manusia</a> </li>
+			<li class="mb-1"><a href="" >tipe energi aktif</a> </li>
+			<li class="mb-1"><a href="" >tipe cakra </a> </li>
+			<li class="mb-1"><a href="" >arah hidup</a> </li>
+			<li class="mb-1"><a href="" >tanda yg tepat</a> </li>
+		</ul>
+	</div>
+	
+	<div class="p-3 w-1/2 md:w-1/4">
+		<ul class="">
+			<li class="mb-1"><a href="" class="text-teal-400 uppercase font-bold">sisi sexuality</a> </li>
+			<li class="mb-1"><a href="" >awal mula tau</a> </li>
+			<li class="mb-1"><a href="" >mencari jaringan komunikasi</a> </li>
+			<li class="mb-1"><a href="" >dating</a> </li>
+			<li class="mb-1"><a href="" >sex aktif</a> </li>
+			<li class="mb-1"><a href="" >tips sex</a> </li>
+			<li class="mb-1"><a href="" >bahaya sex bebas</a> </li>
+			<li class="mb-1"><a href="" >yg ku ketahui tentang hiv</a> </li>
+		</ul>
+	</div>
+</div>
+<!-- footer section end --> 
+
+<!-- footer --> 
+<div class="footer">
+
+<footer class="bg-black text-md p-5 text-white text-center md:text-lg "><p class="md:inline">make with <i class="fas fa-heart text-teal-300"></i> by wege kastelo &copy; 2022</p>
+<p class="md:inline text-blue-400">used tailwind css</p>
+</footer>
+
+</div>
+<!-- footer end --> 
 
 
 
 
-<div class="menu-bottom bg-slate-800 text-white p-4 flex flex-wrap gap-2 md:gap-0 md:text-lg ">
- <ul class="w-[40%] md:w-[25%] mb-5">
- 	<li on class="text-purple-400">home</li>
- 	<li>about</li>
- 	<li>faq,s</li>
- 	<li>contack</li>
- </ul>
- <ul class="w-[40%] md:w-[25%] mb-5">
- 	<li class="text-purple-400">tarot</li>
- 	<li>mayor arcane card</li>
- 	<li>minor arcane card</li>
- 	<li>spread card</li>
- </ul>
-  <ul class="w-[40%] md:w-[25%] mb-5">
- 	<li class="text-purple-400">human design</li>
- 	<li>type</li>
- 	<li>gate</li>
- 	<li>cross live</li>
-      <li> a sign of emotion</li>
-   	<li>chakra</li>
- </ul>
-   <ul class="w-[40%] md:w-[25%] mb-5">
- 	<li class="text-purple-400">astologi</li>
- 	<li> Feng Shui</li>
- 	<li>weton</li>
- 	<li>good day to have party</li>
- </ul>
+
+
+<script>
+   $(document).ready(function() {
  
  
-</div>
-
-<footer class="block bottom-0 bg-slate-900 text-white px-2 py-7  text-xs md:text-xl md:text-center md:p-7 "> made with  <i class="fas fa-heart text-purple-600"></i> by wege powered <span class="text-blue-400 font-bold"><a href="https://tailwindcss.com">( tailwind css )</a></span>,2022 </footer>
-  
-  
-  <script>
-$(document).ready(function(){
-	
-     $(".span2").click(function(){
-     $(".menu").slideToggle("slow");
+      $(".tes").click(function(){
+      $(".buka").slideToggle();
      });
-  
-
+   
 });
 </script>
- </body>
+  
+</body>
 </html>
